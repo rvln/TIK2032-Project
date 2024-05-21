@@ -1,45 +1,139 @@
 /* Navbar */
 nav {
-    background-color: #43bedd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 11px;
-    -webkit-border-radius: 11px;
-    -moz-border-radius: 11px;
-    -ms-border-radius: 11px;
-    -o-border-radius: 11px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    margin: 0 10px;
-    display: inline-blocks;
-    padding: 10px 15px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 24px;
-    transition: 0.3s;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-  }
-  
-  nav a:hover {
-    background-color: #3498b1;
-  }
+  background-color: #43bedd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
 
-  body {
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #052941;
-  }
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-blocks;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  transition: 0.3s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
 
-  /* Style untuk keseluruhan footer */
+nav a:hover {
+  background-color: #3498b1;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #052941;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  word-wrap: break-word;
+  padding: 0px 200px 0px 200px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article img {
+  width: 100%;
+}
+.add-article {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.add-article button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#articleForm {
+  display: none;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+}
+
+#articleForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+#articleForm label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#articleForm input[type="text"],
+#articleForm input[type="file"],
+#articleForm textarea,
+#articleForm input[type="url"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#articleForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#articleForm input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #58bcc4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#articleForm input[type="submit"]:hover {
+  background-color: #4ca8af;
+}
+
+#articleForm br {
+  display: none;
+}
+
+/* Style untuk keseluruhan footer */
 footer {
   background-color: #43bedd;
   display: flex;
